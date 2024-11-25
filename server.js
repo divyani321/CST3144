@@ -5,7 +5,7 @@ const PropertiesReader = require("properties-reader");
 const cors = require("cors");
 const app = express();
 const bodyParser = require('body-parser');
-const { MongoClient, ObjectId } = require("mongodb"); //heloo0000000
+const { MongoClient, ObjectId } = require("mongodb"); 
 
 
 
@@ -62,7 +62,7 @@ async function connectDB() {
       const collection = db.collection('products'); 
       const allDocuments = await collection.find({}).toArray(); // Find a sample document
 
-      console.log("All documents from MongoDB:", allDocuments); // log all documents
+      // console.log("All documents from MongoDB:", allDocuments); // log all documents
 
   } catch (error) {
       console.error("Error connecting to MongoDB: ", error);
@@ -82,7 +82,9 @@ app.use(cors());
 //middleware to parse requests coming as json
 app.use(bodyParser.json());
 
-
+app.get("/", (req, res) => {
+  res.send("Welcome to Home");
+});
 
 //middleware to logging the requests coming
 app.use((request, response, next) => {
