@@ -1,0 +1,20 @@
+{
+  "name": "myonlinelessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0",
+    "morgan": "^1.10.0",
+    "mustache": "^4.2.0",
+    "properties-reader": "^2.3.0"
+  }
+}
