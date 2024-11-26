@@ -14,7 +14,7 @@ const { MongoClient, ObjectId } = require("mongodb");
 
 
 
-//load the properties file
+//load the properties file//
 const properties = PropertiesReader(propertiesPath);
 
 
