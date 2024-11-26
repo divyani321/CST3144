@@ -144,7 +144,7 @@ app.post('/orders', async (req, res) => {
     // here im Destructure the incoming data from the request body//
     const { name, phoneNumber, lessonIDs, numSpaces } = req.body;
 
-    // Validation: Ensure required fields are provided
+    // Validation: Ensure required fields are provided for the following
     if (!name || !phoneNumber || !lessonIDs || !numSpaces) {
       return res.status(400).json({ message: 'Missing required fields' });
     }
