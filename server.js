@@ -52,7 +52,7 @@ const client = new MongoClient(uri);
 
 async function connectDB() {
   try {
-      await client.connect(); // Establish the connection
+      await client.connect(); // Establish the connection for the mongodb//
       console.log("Connected to MongoDB!");
       
 
@@ -141,7 +141,7 @@ app.get('/collections/:collectionName', (req, res, next) => {
 // Route to create a new order
 app.post('/orders', async (req, res) => {
   try {
-    // here im Destructure the incoming data from the request body
+    // here im Destructure the incoming data from the request body//
     const { name, phoneNumber, lessonIDs, numSpaces } = req.body;
 
     // Validation: Ensure required fields are provided
