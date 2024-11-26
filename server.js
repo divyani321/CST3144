@@ -58,7 +58,7 @@ async function connectDB() {
 
 
       // Access the database and perform a simple query to verify the connection
-      const db = client.db(dbName);  // Get a database instance
+      const db = client.db('Webstore');  // Get a database instance     here i have changed to webstore
       const collection = db.collection('products'); 
       const allDocuments = await collection.find({}).toArray(); // Find a sample document
 
