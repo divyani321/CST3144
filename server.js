@@ -138,7 +138,7 @@ app.get('/collections/:collectionName', (req, res, next) => {
 // routes for new collection which is orders
 // =============================================
 
-// Route to create a new order
+// Route to create a new order to the collection//
 app.post('/orders', async (req, res) => {
   try {
     // here im Destructure the incoming data from the request body//
